@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="nav">
+            <p>Andrés David Salgado Cala - ADSO</p>
+        </div>
+        <div class="h1">
+            <h1 class="h">Proyectos</h1>
+        </div>
+        <div class="contproy">
+            <div class="Proyecto1">
+                <a href="Primera.html" class="text">Página ¿Quién Soy?</a>
+                <div class="img1">
+                    <img src="./Imágenes/Primera.png" alt="" id="i">
+                </div>
+            </div>
+            <div class="Proyecto2">
+                <a href="Segunda.html" class="text">Hoja de Vida</a>
+                <div class="img1">
+                    <img src="./Imágenes/Segunda.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto3">
+                <a href="Tercera.html" class="text">Perfil</a>
+                <div class="img1">
+                    <img src="./Imágenes/Tercera.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto4">
+                <a href="Cuarta.html" class="text">Calendario</a>
+                <div class="img1">
+                    <img src="./Imágenes/Cuarta.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto5">
+                <a href="Quinta.html" class="text">Factura</a>
+                <div class="img1">
+                    <img src="./Imágenes/Quinta.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto6">
+                <a href="Sexta.html" class="text">Calculadora</a>
+                <div class="img1">
+                    <img src="./Imágenes/Sexta.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto7">
+                <a href="Septima.html" class="text">Semáforo Automático</a>
+                <div class="img1">
+                    <img src="./Imágenes/Septima.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto8">
+                <a href="Octava.html" class="text">Semáforo Manual</a>
+                <div class="img1">
+                    <img src="./Imágenes/Octava.png" alt="">
+                </div>
+            </div>
+            <div class="Proyecto9">
+                <a href="Novena.html" class="text">Galería</a>
+                <div class="img1">
+                    <img src="./Imágenes/Novena.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background-image: linear-gradient(to right, rgb(234, 246, 70), rgb(50, 246, 230) 90%)
+    }
+    .nav{
+    background-color:rgb(199, 60, 60);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    align-items: center;
+    z-index: 300;
+    }
+    p{
+        font-size: 25px;
+        color: white;
+    }
+    .contproy {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        margin: 0px 20px;
+        
+    }
+
+    h1 {
+        font-size: 90px;
+        position: relative;
+        text-align: center;
+        top: 30px;
+        color: black;
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img1 {
+        border: 5px solid black;
+        height: 100%;
+    }
+    .text{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 45px;
+        color: black;
+        font-weight: bolder;
+        position: relative;
+        bottom: 20px;
+    }
+    .Proyecto1,.Proyecto2,.Proyecto3,.Proyecto4,.Proyecto5,.Proyecto6,.Proyecto7,.Proyecto8,.Proyecto9{
+        text-align: center;
+        margin: 30px 0px;
+        
+    }
+</style>
+
+</html>

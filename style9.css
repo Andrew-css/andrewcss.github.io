@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(238, 107, 46), rgb(92, 245, 143) 90%)
+}
+
+.contenedor {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+}
+
+#img1 {
+    border: 5px solid rgb(254, 180, 47);
+    width: 250px;
+    height: 250px;
+    background-color: beige;
+
+}
+
+#cimg {
+    display: flex;
+    justify-content: center;
+}
+
+#imagenesunder {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: relative;
+    top: 40px;
+
+}
+
+#etiqueta1,
+#etiqueta2,
+#etiqueta3,
+#etiqueta4,
+#etiqueta5,
+#etiqueta6,
+#etiqueta7,
+#etiqueta8,
+#etiqueta9,
+#etiqueta10,
+#etiqueta11,
+#etiqueta12 {
+    border: 5px solid rgb(254, 180, 47);
+    margin: 10px 10px;
+    width: 150px;
+    height: 150px;
+
+}
+
+#img1 img,
+#etiqueta1 img,
+#etiqueta2 img,
+#etiqueta3 img,
+#etiqueta4 img,
+#etiqueta5 img,
+#etiqueta6 img,
+#etiqueta7 img,
+#etiqueta8 img,
+#etiqueta9 img,
+#etiqueta10 img,
+#etiqueta11 img,
+#etiqueta12 img {
+    height: 100%;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 980px) {
+    #imagenesunder {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 515px) {
+    #imagenesunder {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #imagenesunder {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

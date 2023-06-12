@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div id="cimg">
+            <div id="img1"></div>
+        </div>
+        <div id="imagenesunder"></div>
+    </div>
+    <script>
+        let imagenesunder = document.getElementById("imagenesunder");
+        let img1 = document.getElementById("img1")
+        let img = document.createElement("img")
+        let imag = ["./Imágenes/Paraíso.jpg", "./Imágenes/Paraíso.jpg", "./Imágenes/Paraiso2.jpg", "./Imágenes/Paraíso3.jpg", "./Imágenes/Paraíso4.jpg", "./Imágenes/Paraiso5.jpg", "./Imágenes/Paraíso6.jpg", "./Imágenes/Paraíso7.jpg", "./Imágenes/Paraiso8.jpg", "./Imágenes/Paraíso9.jpg", "./Imágenes/Paraíso10.jpg", "./Imágenes/Paraíso11.jpg", "./Imágenes/Paraíso12.jpg"]
+
+        for (let i = 1; i <= 12; i++) {
+            let eti = document.createElement("div");
+            eti.id = "etiqueta" + i;
+
+            let img = document.createElement("img")
+            img.src = imag[0 + i];
+
+            eti.appendChild(img)
+            imagenesunder.appendChild(eti);
+        }
+        for (let i = 1; i <= 12; i++) {
+            document.getElementById("etiqueta" + i).addEventListener("click", function () {
+                img.src = imag[0 + i]
+                img1.appendChild(img)
+          }) }
+    </script>
+</body>
+</html>

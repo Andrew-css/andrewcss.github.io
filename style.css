@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+button{
+    background-color: orangered;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    border: 3px black solid;
+    
+}
+.nav{
+    background-color:rgb(54, 57, 65);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+
+}
+.nav p{
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 10px;
+    
+}
+
+.barra-nav a{
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    text-decoration: none;
+    margin: 30px;
+}
+.barra-nav a:hover{
+    color: rgb(255, 0, 0);
+}
+    
+.quien-soy{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.quien-soy .contenido h1{
+    color:rgb(255, 0, 0);
+    font-size: 5rem;
+    padding: 50px;
+    
+}
+.quien-soy p{
+    font-size: 2rem;
+    padding: 50px;
+}
+
+.Bo1{
+    text-align: center;
+    
+    margin-bottom: 5%;
+}
+.quien-soy2{
+    background-color: orangered;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+.imagen2 img{
+    border-radius: 400px;
+    padding: 30px;
+}
+.contenido p{
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0% 10% 0% 10%;
+}
+.quien-soy .contenido h1{
+    padding-top: 10%;
+
+        
+}
+.proyectos .Titulo{
+    font-size: 3rem;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.proyectos .contenedor-tarjetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap:16px;
+    padding: 30px;
+}
+.proyectos .contenedor-tarjetas .tarjeta{
+    background-color: white;
+    text-align: center;
+    border: 2px solid #000;
+    margin: 0px 20px 0px 20px;
+    
+}
+.proyectos .contenedor-tarjetas .tarjeta .img{
+    height: 300px;
+    width: 100%;
+}
+
+.proyectos .contenedor-tarjetas .tarjeta .img img{
+    height: 100%;
+    width: 100%;
+    
+    object-fit: cover;
+}
+.proyectos .contenedor-tarjetas .tarjeta .contenido-tarjeta{
+    padding: 15px;
+    text-align: center;
+    font-size: 2rem;
+}
+.contenedor-final{
+    background-color:rgb(13, 13, 14);   
+    width: 100%;
+    text-align: right;
+
+
+}
+.contenedor-final p{
+    font-size: 2rem; 
+    color: white;
+    padding: 5px;
+}
+.imagen{
+    text-align: right;
+}
+@media screen  and (max-width: 920px) {
+    .quien-soy{
+        display: grid;
+        grid-template-columns: 100%;
+    } 
+    .contenido{
+        text-align: center;
+    }
+    .imagen{
+        text-align: center;
+        padding-top: 7%;
+    }
+    .quien-soy2{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .Titulo h1{
+        text-align: center;
+    }
+    header{
+        flex-direction: column;
+    }
+
+    .barra-nav a{
+        padding: 10px 0px;
+    }
+    body{
+        margin:0;
+    }
+}
+

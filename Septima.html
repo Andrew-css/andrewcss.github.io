@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo</title>
+    <link rel="stylesheet" href="style78.css">
+</head>
+
+<body>
+    <div id="R">a</div>
+    <div class="container">
+        <div id="Semaforo">
+            <div id="Color1"> </div>
+            <div id="Color2"></div>
+            <div id="Color3"></div>
+        </div>
+    </div>
+    <script>
+        function reiniciar(){
+        setTimeout(function () {
+            document.getElementById("Color1").style.backgroundColor = "red";
+            document.getElementById("Color2").style.backgroundColor = "black";
+            document.getElementById("Color3").style.backgroundColor = "black";
+        }, 1000);
+
+        setTimeout(function () {
+            document.getElementById("Color1").style.backgroundColor = "black";
+            document.getElementById("Color2").style.backgroundColor = "orange";
+            document.getElementById("Color3").style.backgroundColor = "black";
+        }, 2000);
+        setTimeout(function () {
+            document.getElementById("Color1").style.backgroundColor = "black";
+            document.getElementById("Color2").style.backgroundColor = "black";
+            document.getElementById("Color3").style.backgroundColor = "green";
+        }, 3000);
+        }
+
+    setInterval(reiniciar, 3500);
+    
+
+    </script>
+</body>
+
+</html>

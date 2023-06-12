@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style6.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <img src="./Imágenes/lapiz.png" alt="" id="la">
+    <div id="container">
+      <h1>CALCULADORA🖩</h1>
+      <input type="text" id="H" /><br />
+      <div id="boto"></div>
+    </div>
+    <script>
+      let operandoa;
+      let operandob;
+      let operacion;
+      let valor = ["1","2","3","+","-","4","5","6","*","/","7","8","9","^","√","0",".","c","="];
+      for (let i = 0; i <= 18; i++) {
+        let eti = document.createElement("button");
+        eti.id = "bt" + i;
+        eti.textContent = valor[0 + i];
+        boto.appendChild(eti);
+      }
+      for (let i = 0; i <= 18; i++) {
+        document.getElementById("bt" + i).addEventListener("click", function () {
+             H.value = H.value + valor[0 + i];
+            if (document.getElementById("bt" + i) === document.getElementById("bt3")) {
+              operandoa = H.value;
+              operacion = "+";
+              limpiar();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt4")) {
+                operandoa = H.value;
+                 operacion = "-";
+               limpiar();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt8")) {
+                operandoa = H.value;
+                operacion = "*";
+                 limpiar();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt9")) {
+                operandoa = H.value;
+                 operacion = "/";
+               limpiar();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt13")) {
+                operandoa = H.value;
+                 operacion = "^";
+                 limpiar();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt14")) {
+                operandoa = H.value;
+                 operacion = "√";
+                  limpiar();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt16")) {
+                H.value = H.value;
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt17")) {
+                resetear();
+            }else if (document.getElementById("bt" + i) === document.getElementById("bt18")) {
+                operandob = H.value;
+                 resolver();
+            }})}
+      function limpiar() {
+        H.value = "";
+      }
+      function resetear() {
+        H.value = "";
+        operandoa = 0;
+        operandob = 0;
+        operacion = "";
+      }
+      function resolver() {
+        let respuesta = 0;
+        switch (operacion) {
+          case "+":
+            respuesta = parseFloat(operandoa) + parseFloat(operandob);
+            break;
+          case "-":
+            respuesta = parseFloat(operandoa) - parseFloat(operandob);
+            break;
+          case "*":
+            respuesta = parseFloat(operandoa) * parseFloat(operandob);
+            break;
+          case "/":
+            respuesta = parseFloat(operandoa) / parseFloat(operandob);
+            break;
+          case "^":
+            respuesta = parseFloat(operandoa) ** parseFloat(operandob);
+            break;
+          case "√":
+            respuesta = Math.pow(parseFloat(operandoa),1 / parseFloat(operandob));
+            break;
+        }
+        resetear();
+        H.value = respuesta;
+        
+    }
+    </script>
+  </body>
+</html> 

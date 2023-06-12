@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+}
+
+body {
+    margin: 0% 15%;
+    background-color: black;
+}
+
+.contenedor-total {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    height: 1500px;
+
+}
+
+.Imagen {
+    background-color: rgb(1, 112, 194);
+    padding: 5%;
+
+}
+
+.Imagen img {
+    padding: 10%;
+    border-radius: 50%;
+    width: 80%;
+    height: 20%;
+}
+
+.Imagen h1 {
+    color: white;
+    font-size: 300%;
+    margin-left: 15%
+}
+
+.Imagen ul {
+    color: rgb(255, 255, 255);
+    font-size: 20PX;
+    margin: 10px;
+    margin-left: 20%;
+}
+
+.Imagen Li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Imagen p {
+    color: white;
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* TextoDer */
+.Nombre h1 {
+    font-size: 4rem;
+}
+
+.Datos {
+    margin: 3% 0% 0% 3%;
+    font-size: 20px;
+}
+
+.Datos p {
+    margin: 1% 0% 0% 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Idiomas li {
+    margin: 1% 0% 0% 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Habilidades li {
+    margin: 1% 0% 0% 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Cursos li {
+    margin: 1% 0% 0% 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Resumen p {
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Historial p {
+    margin: 1% 0% 0% 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.Historial Li {
+    margin: 1% 0% 0% 4%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 50%;
+}
+
+.TextoDer h1 {
+    color: rgb(1, 112, 194);
+}
+
+.TextoDer {
+    background-color: aliceblue;
+    display: grid;
+    font-size: 18px;
+
+}
+
+.Nombre h1 {
+    color: black;
+}
+
+@media only screen and (max-width: 1122px) {
+    body {
+        margin: 0%;
+    }
+
+    .Imagen h1 {
+        padding: 0%;
+    }
+
+    .Imagen ul {
+        padding: 0%;
+    }
+
+    .contenedor-total {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .Imagen img {
+        margin-left: 5px;
+        border-radius: 50%;
+        width: 80%;
+        height: 50%;
+
+    }
+
+    .Imagen h1 {
+        text-align: center;
+    }
+
+    .Imagen ul {
+        margin-left: 40%;
+        list-style: none;
+    }
+
+    .Resumen p {
+        width: 90%;
+    }
+
+    .Historial p {
+        width: 90%;
+    }
+
+    .Historial Li {
+        width: 90%;
+    }
+
+    .Imagen p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width: 1312px) {
+    .Imagen h1 {
+        margin-left: 5%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width: 1120px) {
+    .Imagen h1 {
+        margin-left: 5%;
+        font-size: 80px;
+    }
+
+    .Imagen ul {
+        font-size: 40px;
+        margin-left: 35%;
+    }
+
+    .TextoDer {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width:1313px) and (max-width: 1700px) {
+    .Imagen h1 {
+        margin-left: 5%;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .Imagen p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .Imagen h1 {
+        font-size: 30px;
+    }
+
+    .Imagen ul {
+        font-size: 20px;
+    }
+    body{
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width:901px) and (max-width: 950px) {
+    .Imagen p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .Imagen h1 {
+        font-size: 50px;
+    }
+
+    .Imagen ul {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 710px) {
+    .Imagen p {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .Imagen h1 {
+        font-size: 20px;
+    }
+
+    .Imagen ul {
+        font-size: 20px;
+    }
+}

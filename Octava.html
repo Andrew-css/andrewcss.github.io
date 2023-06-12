@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo con Botón</title>
+    <link rel="stylesheet" href="style78.css">
+</head>
+
+<body>
+    <div id="R">a</div>
+    <div class="container">
+        <div id="Semaforo">
+            <div class="color" id="Color1"></div>
+            <div class="color" id="Color2"></div>
+            <div class="color" id="Color3"></div>
+            <button id="Boton">CAMBIAR</button>
+        </div>
+    </div>
+    <script>
+        const verde = document.getElementById("Color1")
+    const amarillo = document.getElementById("Color2")
+    const rojo = document.getElementById("Color3")
+
+    let divselecc = 2
+    let colores = ["red", "orange", "green"]
+    let div = document.querySelectorAll(".color")
+    
+    const boton = document.getElementById("Boton")
+
+    boton.addEventListener("click", function(){
+
+        let divactual = div[divselecc]
+        divactual.style.backgroundColor = ''
+
+        divselecc = (divselecc + 1) % div.length
+
+        let siguientediv = div[divselecc]
+        siguientediv.style.backgroundColor = colores[divselecc]
+
+    })
+    
+
+    </script>
+</body>
+
+</html>
